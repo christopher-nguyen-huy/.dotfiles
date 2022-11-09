@@ -1,0 +1,69 @@
+Xcursor.size: 14
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+*foreground: #00ee00
+*foreground_bold: #a8a19f
+! *cursor: #a8a19f
+!! *background: #1b1918
+!!*background: rgba(0, 0, 0, .7)
+
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #3afe28
+!!*color2: #5afe38 original green
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #407ee7
+*color12: #407ee7
+!! magenta
+*color5: #6666eay
+*color13: #6666ea
+!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!! white
+*color7: #a8a19f
+*color15: #f1efee
+
+URxvt.scrollBar: false
+!!URxvt.font: xft:monospace:size=9
+!!URxvt.font: xft:monospace:size=9,xft:DejaVu Sans Mono
+URxvt.font: xft:dejavu sans mono:size=9
+URxvt.depth: 32
+URxvt.intensityStyles: false
+URxvt.background: [95]#1b1b1b
+URxvt.saveLines: 4095
+URxvt.iso14755: false
+URxvt*buffered: false
+URxvt*termName: rxvt-256color
+
+!! Plugins tabbed,tabbedex
+URxvt.perl-ext-common: resize-font,clipboard
+URxvt.keysym.C-Down: resize-font:smaller
+URxvt.keysym.C-Up: resize-font:bigger
+URxvt.keysym.C-0: resize-font:reset
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.tabbed.new-button: true
+!!URxvt.keysym.C-t: perl:tabbedex:new_tab
+URxvt.keysym.C-Tab: perl:tabbedex:next_tab
+URxvt.keysym.C-S-Tab: perl:tabbedex:prev_tab

@@ -1,0 +1,16 @@
+vim.opt.filetype = "on"
+vim.opt.filetype.indent = "on"
+vim.opt.filetype.plugin = "on"
+vim.opt.syntax = "on"
+vim.opt.number = true
+vim.opt.cursorline = true
+vim.opt.shiftwidth = 4 
+vim.opt.tabstop = 4
+-- vim.opt.nobackup = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.showcmd = true
+vim.opt.showmode = true
+vim.opt.showmatch = true
+vim.opt.hlsearch = true
+vim.opt.history = 1000 

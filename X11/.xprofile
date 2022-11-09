@@ -1,0 +1,6 @@
+xset r rate 200 80 
+xrandr --output DP1 --mode 2560x1440 --rate 144.00
+picom --experimental-backends &
+# emacs --daemon &
+feh --bg-center ~/Downloads/wallpapers/pastel.jpg &
+warpd &
